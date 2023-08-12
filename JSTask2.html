@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            background-color: lightgray;
+        }
+        .profile-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .profile-button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .profile-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h4 class="row mt-3 p-3" style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="flex: 1;">11h 25m</span>
+        <span style="flex: 1; text-align: center;">Done Activities(4)</span>
+        <span style="flex: 1; display: flex; align-items: center; justify-content: flex-end;">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>&#8942;</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <!-- Dropdown options here -->
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+            </div>
+        </span>
+    </h4>
+    <div class="row mt-3">
+        <div class="col bg-light">
+            <h3><i class="fas fa-check-circle" style="color: green;"></i>Kickoff Meaning</h3>
+            <p class="date"><span style="font-size: 1.2em;">📅</span> <span id="date1"></span></p>
+            <div class="profile-buttons" style="display: flex; justify-content: flex-end;">
+                <button class="profile-button" onclick="handleProfileClick(1)">
+                    <img class="profile-image" src="https://www.themarque.com/photos-cache/profile-images/00373477-637de4ffc13640/profile_public_big.jpg" alt="Profile 1">
+                </button>
+                <button class="profile-button" onclick="handleProfileClick(2)">
+                    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN_uVpVd-GBTwqupr5hwUH4jVOGJNTVP7AQA&usqp=CAU" alt="Profile 2">
+                </button>
+                <button class="profile-button" onclick="handleProfileClick(3)">
+                    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEum8iRKJpRQJwxH6NV4QrjkTUqnkUAghdQ&usqp=CAU" alt="Profile 3">
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>&#8942;</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- Dropdown options here -->
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                        <a class="dropdown-item" href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col bg-light">
+            <h3><i class="fas fa-check-circle" style="color: green;"></i>User Interview</h3>
+            <p class="date"><span style="font-size: 1.2em;">📅</span> <span id="date2"></span></p>
+            <div class="profile-buttons" style="display: flex; justify-content: flex-end;">
+                <button class="profile-button" onclick="handleProfileClick(1)">
+                    <img class="profile-image" src="https://www.themarque.com/photos-cache/profile-images/00373477-637de4ffc13640/profile_public_big.jpg" alt="Profile 1">
+                </button>
+                <button class="profile-button" onclick="handleProfileClick(3)">
+                    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEum8iRKJpRQJwxH6NV4QrjkTUqnkUAghdQ&usqp=CAU" alt="Profile 3">
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>&#8942;</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- Dropdown options here -->
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                        <a class="dropdown-item" href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col bg-light">
+            <h3><i class="fas fa-check-circle" style="color: green;"></i>Prototying</h3>
+            <p class="date"><span style="font-size: 1.2em;">📅</span> <span id="date3"></span></p>
+            <div class="profile-buttons" style="display: flex; justify-content: flex-end;">
+                <button class="profile-button" onclick="handleProfileClick(1)">
+                    <img class="profile-image" src="https://www.themarque.com/photos-cache/profile-images/00373477-637de4ffc13640/profile_public_big.jpg" alt="Profile 1">
+                </button>
+                <button class="profile-button" onclick="handleProfileClick(2)">
+                    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN_uVpVd-GBTwqupr5hwUH4jVOGJNTVP7AQA&usqp=CAU" alt="Profile 2">
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>&#8942;</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- Dropdown options here -->
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                        <a class="dropdown-item" href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col bg-light">
+            <h3><i class="fas fa-check-circle" style="color: green;"></i>Call with client</h3>
+            <p class="date"><span style="font-size: 1.2em;">📅</span> <span id="date4"></span></p>
+            <div class="profile-buttons" style="display: flex; justify-content: flex-end;">
+                <button class="profile-button" onclick="handleProfileClick(3)">
+                    <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEum8iRKJpRQJwxH6NV4QrjkTUqnkUAghdQ&usqp=CAU" alt="Profile 3">
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>&#8942;</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- Dropdown options here -->
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                        <a class="dropdown-item" href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get references to the date and time elements
+        const dateElements = document.querySelectorAll(".date");
+        const timeElements = document.querySelectorAll(".time");
+
+        // Function to update the date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+
+            // Update the date and time elements with current values
+            dateElements.forEach((element, index) => {
+                element.querySelector("#date" + (index + 1)).textContent = now.toLocaleDateString(undefined, options);
+            });
+            timeElements.forEach((element, index) => {
+                element.textContent = now.toLocaleTimeString(undefined, options);
+            });
+        }
+
+        // Update the date and time immediately and then set interval to update every minute
+        updateDateTime();
+        setInterval(updateDateTime, 60000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task_1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            background-color: lightgray;
+        }
+
+        .navbar {
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        .navbar-brand {
+            margin: 0;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar-nav .nav-item {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .custom-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top left;
+        }
+
+        .image-heading-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .headings {
+            margin-left: 10px;
+        }
+
+        .safari, .senorita, .desperado {
+            height: 40px;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            text-align: center;
+            width: 100%;
+            max-width: 150px;
+            margin: 5px auto;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 50px;
+        }
+
+        .card ul li::before {
+            content: "\2022";
+            color: green;
+            font-size: 1.5em; 
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .safari {
+            background-color: skyblue;
+        }
+
+        .senorita {
+            background-color: red;
+        }
+
+        .desperado {
+            background-color: lawngreen;
+        }
+        .timestamp {
+            float: right;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="desperado">Preview</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="safari">AWARDS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="safari">SONGS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="safari">Download</button>
+                    </li>
+                    <li class="nav-item">
+                        <select class="senorita">
+                            <option>Actions</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/00373477-637de4ffc13640/profile_public_big.jpg" class="card-img-top custom-img">
+                            <div class="headings">
+                                <h4>Steve Martin</h4>
+                                <h6>Full Stack Developer</h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>
+                                HTML
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in HTML</p>
+                            </li>
+                            <li>
+                                CSS
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in CSS</p>
+                            </li>
+                            <li>
+                                JS
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Javascript</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN_uVpVd-GBTwqupr5hwUH4jVOGJNTVP7AQA&usqp=CAU" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4>Marquee Slander</h4>
+                                <h6>Cloud Computing</h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>
+                                Devops
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Google Cloud</p>
+                            </li>
+                            <li>
+                                Mobile Cloud Computing
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Mobile Cloud Computing</p>
+                            </li>
+                            <li>
+                                Edge Computing
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Edge Computing</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEum8iRKJpRQJwxH6NV4QrjkTUqnkUAghdQ&usqp=CAU" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4>Michael Mark</h4>
+                                <h6>UI/UX designer</h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>
+                                3D Graphics in Web and Mobile UI
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in 3D Graphics</p>
+                            </li>
+                            <li>
+                                Voice User Interface
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Voice User Interface</p>
+                            </li>
+                            <li>
+                                Animated Illustrations
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Animated Illustrations</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-heading-container">
+                            <img src="https://www.themarque.com/photos-cache/profile-images/00373477-637de4ffc13640/profile_public_big.jpg" class="card-img-top custom-img" alt="Image">
+                            <div class="headings">
+                                <h4>Chris Curious</h4>
+                                <h6>Cyber Security</h6>
+                            </div>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>
+                                Network Security
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Network Security</p>
+                            </li>
+                            <li>
+                                Malware
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Malware</p>
+                            </li>
+                            <li>
+                                Cybercrime
+                                <span class="timestamp">08 NOV</span>
+                                <p>Full knowledge in Cybercrime</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
